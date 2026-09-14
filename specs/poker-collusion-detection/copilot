@@ -1,0 +1,371 @@
+Yes. After reading the dossier, I think the biggest opportunity is not another classifier or another ensemble. The dossier itself already contains the clue:
+
+Dev CV AUC 0.85 to 0.92 but LB stalled around 0.16 to 0.19, then improved only when ranking/path issues were fixed.
+
+The strongest ideas I would pursue next are:
+
+1. Train on the population you score on
+
+This is the biggest red flag in the whole document.
+
+Section 6.2 essentially says the model is trained on:
+
+372 positives
+1,488 confirmed negatives
+
+but scored on:
+
+112,540 evaluation pairs
+
+and those are very different populations.
+
+What I'd add
+
+Instead of:
+
+positive vs confirmed negative
+
+
+train:
+
+positive vs (confirmed negative + sampled unlabeled)
+
+
+with multiple ratios:
+
+1:1
+1:5
+1:10
+1:20
+
+and use:
+
+unlabeled weight 0.05
+0.1
+0.2
+
+Then optimize a PU-aware ranking objective.
+
+Honestly, I suspect this is worth more than any new feature because your own leaderboard history repeatedly shows:
+
+higher CV on confirmed pairs does not transfer.
+
+2. Pool-relative extremeness features
+
+Your best signals are:
+
+value_flow_abs_p95
+value_flow_abs_p90
+aggression_asymmetry
+avoidance_gap
+
+But all are measured absolutely.
+
+I would build:
+
+pair_feature /
+pool_feature_percentile
+
+
+Examples:
+
+Pool percentile
+pair value_flow p95 percentile
+within table_id
+
+Rank
+rank of pair among 435 pairs
+within pool
+
+Z-score
+(pair - pool mean)
+/ pool std
+
+
+Why?
+
+Because positives are incredibly rare:
+
+~0.214% prevalence.
+
+The question isn't:
+
+Is this pair suspicious?
+
+It's:
+
+Is this pair one of the most suspicious pairs in its pool?
+
+Pair AP should love that.
+
+3. Graph features (surprised they're absent)
+
+I don't see a serious graph treatment.
+
+You have:
+
+30 players
+435 pairs per pool
+directed chip flow
+
+That's a graph.
+
+Create:
+
+Directed transfer graph
+
+Edges:
+
+A -> B
+weight = chips transferred
+
+
+Then compute:
+
+Edge surprise
+flow(A,B)
+/ expected flow(A,*)
+
+Reciprocity
+A->B
+vs
+A->others
+
+Edge concentration
+
+What fraction of a player's transferred chips go to one partner?
+
+Betweenness / community
+
+Colluders frequently form tiny, abnormal subgraphs.
+
+I would be shocked if top teams aren't using graph features.
+
+4. Use higher-order interactions, not just pair summaries
+
+Current features seem heavily pair-aggregated.
+
+For example:
+
+mean
+p90
+p95
+max
+
+
+The next step is:
+
+Conditional interactions
+
+Example:
+
+large value transfer
+AND
+aggression avoided
+
+
+A hand that's high on both is much stronger evidence than either alone.
+
+Build:
+
+count(
+value_flow > q95
+AND
+soft_play_signal > q95
+)
+
+
+per pair.
+
+These "collision" features often outperform raw means.
+
+5. Evidence-first risk score
+
+A potentially huge idea.
+
+You discovered:
+
+Evidence improvements transferred better than risk tweaks.
+
+I would construct:
+
+risk(pair)
+=
+best evidence hand score
+
+
+or
+
+top3 evidence mean
+
+
+instead of only pair aggregates.
+
+Reason:
+
+The metric rewards finding the truly collusive hands.
+
+The strongest hand may carry more information than:
+
+500 shared hands aggregated
+
+
+especially in episodic collusion.
+
+6. Sequence features for coordinated_isolation
+
+The dossier explicitly mentions:
+
+isolation is a sequence, not a count.
+
+I strongly agree.
+
+Current isolation features appear mostly count/rate based.
+
+I'd create sequence detectors:
+
+A raises
+B re-raises
+target folds
+
+
+or
+
+A pressures
+B pressures
+both disengage vs partner
+
+
+Then count occurrences.
+
+This feels like one of the biggest unexploited family-specific opportunities.
+
+7. "Partner preference" features
+
+The dossier focuses on:
+
+pair vs field
+
+
+But not enough on ranking preferences.
+
+Examples:
+
+For player A:
+
+fraction of total transferred chips
+that go specifically to B
+
+
+For player B:
+
+fraction received from A
+
+
+Then:
+
+mutual_partner_preference
+
+
+Even if absolute transfer isn't huge, partner concentration can be.
+
+8. Learn embeddings from hand-level behavior
+
+This is probably the highest-ceiling approach.
+
+For each pair:
+
+Create vector:
+
+[
+transfer stats,
+aggression stats,
+showdown stats,
+position stats,
+street stats
+]
+
+
+per shared hand.
+
+Then train:
+
+autoencoder
+contrastive embedding
+node2vec-style graph embedding
+
+and aggregate to pair embeddings.
+
+Why?
+
+Your current leaderboard score (~0.19) is far below public solutions (~0.56-0.64) and reported tops (~0.9).
+
+That gap is too large to be explained by tuning. It usually means people found a representation that captures interaction patterns you are manually averaging away.
+
+9. Hard-negative mining
+
+I would absolutely add this.
+
+Current negatives:
+
+confirmed negatives
+
+
+are probably easy.
+
+Instead:
+
+Train model
+Score unlabeled pairs
+Take top 0.5%
+Add as hard negatives (small weight)
+Retrain
+
+Repeat.
+
+This directly attacks the population mismatch noted in section 6.2.
+
+10. The highest-ROI experiment
+
+If I could run only one thing tomorrow, it would be:
+
+Pool-relative ranking model
+
+For every major feature:
+
+raw
+rank_in_pool
+percentile_in_pool
+zscore_in_pool
+
+
+Then train:
+
+logistic
++
+GBT
++
+rank average
+
+
+with PU-style unlabeled sampling.
+
+Why this first?
+
+Cheap implementation.
+Directly targets Pair AP (70% of score).
+Compatible with all existing features.
+Doesn't require rescanning actions.
+Fits the "colluders are rare within a pool" structure already established in the dossier.
+My ranking of likely impact
+Idea	Expected ImpactPU + unlabeled training population	Very High
+Pool-relative feature transforms	Very High
+Graph/network features	High
+Sequence-based coordinated_isolation	High
+Hard-negative mining	High
+Partner-preference concentration features	Medium-High
+Evidence-first risk scoring	Medium-High
+Learned embeddings	High ceiling, high effort
+More boosting/ensembling	Low
+
+The strongest signal in the dossier is that you've probably extracted enough raw features already. The remaining score is most likely hidden in population mismatch, within-pool ranking, graph structure, and sequence modeling, not in another round of tree tuning."

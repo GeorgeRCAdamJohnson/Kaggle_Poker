@@ -1,0 +1,35 @@
+# ===== Kaggle_Poker .gitignore =====
+# Competition data (NOT ours to redistribute)
+data/
+# Large regenerable outputs, caches, model artifacts, submissions
+outputs/
+catboost_info/
+.pytest_cache/
+.hypothesis/
+**/__pycache__/
+*.pyc
+# Competitor notebooks (copyright — not ours to republish)
+_refs/
+# Submission CSVs (regenerable; competition artifacts)
+*.csv
+submission.csv
+# Scratch logs / temp
+_repro_*.log
+_repro_*.json
+_repro_*.txt
+_subs*.txt
+_smoke_*.log
+_profile_*.log
+run.cmd
+# Secrets / creds (belt-and-suspenders; none in repo but never allow)
+*.env
+.env
+kaggle.json
+*.pem
+*.key
+credentials*
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,39 @@
+# Default pipeline configuration for poker_collusion.
+#
+# These values mirror poker_collusion/config.py defaults and can be overridden
+# per experiment. Paths are resolved relative to the environment (local vs Kaggle)
+# by poker_collusion.config unless set explicitly here.
+
+seeds:
+  master: 20240918
+  pu_ranker: 101
+  behavior_classifier: 202
+  evidence_ranker: 303
+  cv_split: 404
+  bootstrap: 505
+
+# Parquet chunked-read controls (Requirement 1.6).
+row_group_size: 100000
+
+# Reproducibility version identifiers (Requirements 5.4, 11.2).
+schema_version: pair_features_v1
+threshold_version: thresholds_v1
+
+# Column projections per gameplay table for chunked, column-projected reads.
+columns:
+  players: [player_id]
+  hands: [hand_id, table_id, phase]
+  seats: [hand_id, player_id, seat, stack_start, stack_end]
+  actions:
+    [
+      hand_id,
+      action_no,
+      actor,
+      action,
+      amount,
+      amount_to,
+      to_call,
+      pot_before,
+      stack_before,
+      players_active,
+    ]

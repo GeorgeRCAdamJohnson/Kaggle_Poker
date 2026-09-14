@@ -1,0 +1,71 @@
+"""Validation layer: local CV harness reproducing the competition metric."""
+
+from poker_collusion.validation.bootstrap import (
+    BootstrapSamples,
+    ConfidenceInterval,
+    bootstrap_components,
+    confidence_interval,
+    is_improvement_beyond_band,
+    paired_bootstrap_diff,
+)
+from poker_collusion.validation.cv import (
+    CVHarness,
+    CVReport,
+    Fold,
+    FoldResult,
+    build_fold_solution,
+    derive_pool_map,
+    make_pool_folds,
+)
+from poker_collusion.validation.exploit_eval import (
+    ExploitDecision,
+    ExploitEvalResult,
+    evaluate_exploit,
+    evaluate_exploits,
+    default_exploit_transforms,
+    e1_calibration_transform,
+    e2_other_coordination_transform,
+    e4_coverage_transform,
+)
+from poker_collusion.validation.lb_cv import (
+    WEAK_CORRELATION_THRESHOLD,
+    LbCvDiagnostic,
+    SelectionResult,
+    SubmissionCandidate,
+    lb_cv_correlation,
+    pearson_corr,
+    select_submission,
+    spearman_corr,
+)
+
+__all__ = [
+    "CVHarness",
+    "CVReport",
+    "Fold",
+    "FoldResult",
+    "build_fold_solution",
+    "derive_pool_map",
+    "make_pool_folds",
+    "BootstrapSamples",
+    "ConfidenceInterval",
+    "bootstrap_components",
+    "confidence_interval",
+    "is_improvement_beyond_band",
+    "paired_bootstrap_diff",
+    "ExploitDecision",
+    "ExploitEvalResult",
+    "evaluate_exploit",
+    "evaluate_exploits",
+    "default_exploit_transforms",
+    "e1_calibration_transform",
+    "e2_other_coordination_transform",
+    "e4_coverage_transform",
+    "WEAK_CORRELATION_THRESHOLD",
+    "LbCvDiagnostic",
+    "SelectionResult",
+    "SubmissionCandidate",
+    "lb_cv_correlation",
+    "pearson_corr",
+    "select_submission",
+    "spearman_corr",
+]

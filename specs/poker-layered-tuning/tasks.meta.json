@@ -1,0 +1,905 @@
+{
+  "pbtResults": {
+    "15.2 Write property test for no-extrapolation flagging": {
+      "status": "passed",
+      "lastRunTimestamp": 1789233129413
+    },
+    "5.2 Write property test for RANK_BLEND weight-zero identity": {
+      "status": "passed",
+      "lastRunTimestamp": 1789233535599
+    },
+    "5.3 Write property test for all-OFF reproducing the floor": {
+      "status": "passed",
+      "lastRunTimestamp": 1789233543915
+    },
+    "5.4 Write property test for corrupting-layer flagging": {
+      "status": "passed",
+      "lastRunTimestamp": 1789233569200
+    },
+    "7.4 Write property test for the separation predicate": {
+      "status": "passed",
+      "lastRunTimestamp": 1789233710526
+    },
+    "7.6 Write property test for the trust branch": {
+      "status": "passed",
+      "lastRunTimestamp": 1789233729166
+    },
+    "11.3 Write property test for the exhaustive verified sweep": {
+      "status": "passed",
+      "lastRunTimestamp": 1789233828849
+    }
+  },
+  "executionHistory": {
+    "1. GATE A — Early external checkpoint: submit the known-good floor and obtain a REAL leaderboard score before any elaboration": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184057
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232203033
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232426812
+      }
+    ],
+    "2. Checkpoint — Do not proceed past Gate A until the real LB score has returned and confirms the floor": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184120
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232432219
+      }
+    ],
+    "3.1 Create the harness package skeleton and shared data models": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184169
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232436034
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232667681
+      }
+    ],
+    "4.1 Implement `layers/registry.py`": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184205
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232671854
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233152057
+      }
+    ],
+    "5.1 Implement `composition/composer.py`": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184240
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233161752
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233461687
+      }
+    ],
+    "5.2 Write property test for RANK_BLEND weight-zero identity": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184274
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233467335
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233623848
+      }
+    ],
+    "5.3 Write property test for all-OFF reproducing the floor": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184304
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233468730
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233621504
+      }
+    ],
+    "5.4 Write property test for corrupting-layer flagging": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184337
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233469685
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233625258
+      }
+    ],
+    "5.5 Write unit test for best-effort layer reporting and reporting-failure edge": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184370
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233471092
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233626429
+      }
+    ],
+    "6.1 Implement `gate/drift_gate.py`": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184415
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232673235
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233153428
+      }
+    ],
+    "7.1 Implement `gate/calibration.py`": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184461
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233162401
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233460577
+      }
+    ],
+    "7.2 Write property test for calibrated-threshold derivation": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184496
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233631085
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233748994
+      }
+    ],
+    "7.3 Write property test for anchor re-classification": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184531
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233632028
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233751364
+      }
+    ],
+    "7.4 Write property test for the separation predicate": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184562
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233633430
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233750384
+      }
+    ],
+    "7.5 Write property test for overlap invalidation and null surfacing": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184596
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233634916
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233748035
+      }
+    ],
+    "7.6 Write property test for the trust branch": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184629
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233635623
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233746639
+      }
+    ],
+    "7.7 Write unit test for the motivating bug (Req 1.8)": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184667
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233755714
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233846396
+      }
+    ],
+    "8.1 Implement `holdout/scorer.py`": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184701
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232674184
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233154373
+      }
+    ],
+    "9.1 Compose the drift -> holdout sequence and mark RETRAIN trust": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184738
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233472187
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233622902
+      }
+    ],
+    "9.2 Write property test for RETRAIN trust gating": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184783
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233854386
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234060786
+      }
+    ],
+    "10. Checkpoint — Ensure gate + composer + calibrator tests pass": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184813
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789245946297
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789246046372
+      }
+    ],
+    "11.1 Implement `shrinkage/eb.py`": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184847
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232675588
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233155829
+      }
+    ],
+    "11.2 Write property test for shrinkage monotonicity": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184880
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233757055
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233849848
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789245820462
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789245939340
+      }
+    ],
+    "11.3 Write property test for the exhaustive verified sweep": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184914
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233758003
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233847799
+      }
+    ],
+    "12.1 Implement `ablation/leave_one_out.py`": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232184955
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233855225
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234059804
+      }
+    ],
+    "12.2 Write property test for leave-one-out contribution": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185004
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234069134
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234420451
+      }
+    ],
+    "12.3 Write property test for the removal recommendation": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185035
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234067674
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234421828
+      }
+    ],
+    "12.4 Write property test for leanest-subset selection": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185068
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234066293
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234422769
+      }
+    ],
+    "13.1 Implement `tuning/tuner.py`": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185103
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234070003
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234423993
+      }
+    ],
+    "13.2 Write property test for tuning stage order": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185135
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234428548
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234734143
+      }
+    ],
+    "13.3 Write property test for the two independent guarantees": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185171
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234429493
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234731878
+      }
+    ],
+    "13.4 Write property test for conditional/RETRAIN classification": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185200
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234432308
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234735634
+      }
+    ],
+    "13.5 Write property test for measured-vs-projected reporting in tuning": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185233
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234433129
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234732750
+      }
+    ],
+    "14. Checkpoint — Ensure tuning, ablation, shrinkage tests pass": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185269
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789246049950
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789246145493
+      }
+    ],
+    "15.1 Implement `projection/project.py`": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185302
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232676611
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233156882
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789245819311
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789245938127
+      }
+    ],
+    "15.2 Write property test for no-extrapolation flagging": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185334
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233759079
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233848751
+      }
+    ],
+    "16.1 Implement `submission/gate.py`": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185367
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234430893
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234736485
+      }
+    ],
+    "16.2 Write property test for report completeness": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185402
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234741441
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234862219
+      }
+    ],
+    "16.3 Write property test for drift-fail never recommended": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185434
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234742828
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234863226
+      }
+    ],
+    "16.4 Write property test for anchor append + recalibration": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185480
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234743780
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234860812
+      }
+    ],
+    "16.5 Write property test for the guarded floor writer": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185525
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234745177
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234858470
+      }
+    ],
+    "16.6 Write unit test for the two-consecutive-regression HALT": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185552
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234746181
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234859421
+      }
+    ],
+    "17.1 Write end-to-end integration test on the real holdout": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185584
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234868561
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789239395492
+      }
+    ],
+    "17.2 Write floor-artifact guard integration test": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185616
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234869565
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789239396547
+      }
+    ],
+    "18. Final checkpoint — Ensure all tests pass and the audit trail is complete": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232185647
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789246149054
+      },
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789246389259
+      }
+    ],
+    "3. Establish harness scaffolding, data models, and the LB_Anchor store": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789232667734
+      }
+    ],
+    "4. Layer registry with the known-good floor configuration": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233152109
+      }
+    ],
+    "6. Drift_Gate (adversarial dev-vs-eval AUC)": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233153458
+      }
+    ],
+    "8. Holdout scorer (table-disjoint PU-stress AP)": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233154440
+      }
+    ],
+    "5. Composer with hard floor guarantee": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233626461
+      }
+    ],
+    "7. Calibrator (Clean_Separation_Check + LB_Calibrated_Threshold + null surfacing)": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233846429
+      }
+    ],
+    "15. LB_Projection with enforced fit range (no extrapolation)": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233848784
+      }
+    ],
+    "11. Sample-size shrinkage for per-pair statistics": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789233849880
+      }
+    ],
+    "9. Wire the gate sequence: Drift PASS first, then holdout is trustworthy": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234060818
+      }
+    ],
+    "12. Ablation (leave-one-out)": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234422804
+      }
+    ],
+    "13. Two-level tuner (drift -> baseline -> layers)": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234735672
+      }
+    ],
+    "16. Submission gate, anchor recording, and stop-loss HALT state machine": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789234863281
+      }
+    ],
+    "17. Integration tests on the real table-disjoint holdout and the floor-artifact guard": [
+      {
+        "executionId": "9d869eb0-1834-4f41-96b3-cd8f55995015",
+        "chatSessionId": "sess_8a8f0de9-deda-48db-ad0d-63c08611af52",
+        "timestamp": 1789239396591
+      }
+    ]
+  }
+}

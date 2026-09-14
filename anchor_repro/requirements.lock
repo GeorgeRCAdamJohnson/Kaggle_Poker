@@ -1,0 +1,44 @@
+# anchor_repro reproduction lock
+# --------------------------------
+# Governed by the workspace reverse-engineering-accountability contract.
+# Every version below was VERIFIED by a real install + import on this machine
+# (Python 3.13, Windows) — not guessed, not extrapolated (contract Rule 4/9).
+#
+# Purpose: make the lowest-friction reproduction-notebook setup repeatable.
+# The reused metric / CV / Spearman code lives in poker_collusion (a single
+# audited implementation); anchor_repro does NOT re-implement any of it.
+#
+# SCOPE NOTE: the lightgbm + catboost reproduction notebooks are OUT OF SCOPE
+# for build-order step 3. They are intentionally NOT locked here. Only the
+# lowest-friction (polars-based) notebook path is covered by this lock. When
+# the gradient-boosting notebooks are brought in scope, extend this file with
+# their verified-installed versions under a clearly labeled section.
+
+# ---- core numerical stack (kept in sync with poker/pyproject.toml pins) ----
+numpy==2.2.6
+pandas==2.2.3
+pyarrow==18.1.0
+scikit-learn==1.6.1
+PyYAML==6.0.2
+
+# ---- reproduction-notebook dependency (verified: installs + imports on 3.13) ----
+polars==1.44.2
+# transitive runtime component pulled in by polars 1.44.2 (captured from pip freeze)
+polars-runtime-32==1.44.2
+
+# ---- out of scope for step 3 (do NOT add without a verified install) ----
+# lightgbm==<unpinned — out of scope>
+# catboost==<unpinned — out of scope>
+
+# ---- reproduction-notebook plotting dependency (VERIFIED: installed + imports on 3.13) ----
+# The 0.64469 notebook's EDA cells use matplotlib. Added after task 8.4 recorded the
+# reproduction BLOCKED at stage `deps` on this missing package (dossier §43). Version is
+# the real installed+imported version on this machine (contract Rule 9 — not guessed).
+matplotlib==3.11.2
+# transitive components of matplotlib 3.11.2 (captured from the live install):
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.65.0
+kiwisolver==1.5.1
+pillow==12.3.0
+pyparsing==3.3.2

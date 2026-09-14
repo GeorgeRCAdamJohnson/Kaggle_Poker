@@ -1,0 +1,15 @@
+# Pinned, exact dependency versions for the poker_collusion pipeline.
+# Chosen to support Python 3.13 (the workspace interpreter) and to match the
+# Kaggle Python image reasonably closely. Exact pins keep feature generation and
+# model training reproducible (Requirements 5.4, 6.7, 11.2).
+#
+# Install with:  python -m pip install -r poker_collusion/requirements.txt
+
+numpy==2.2.6
+pandas==2.2.3
+pyarrow==18.1.0
+scikit-learn==1.6.1
+torch==2.6.0
+hypothesis==6.125.3
+pytest==8.3.5
+PyYAML==6.0.2

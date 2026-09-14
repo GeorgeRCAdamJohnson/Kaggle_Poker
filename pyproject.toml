@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poker-collusion"
+version = "0.1.0"
+description = "Pipeline for detecting suspicious value transfers (collusion) in synthetic poker hands."
+readme = "poker_collusion/README.md"
+requires-python = ">=3.11"
+license = { text = "Proprietary" }
+
+# Exact pins keep feature generation, training, and scoring reproducible
+# (Requirements 5.4, 6.7, 11.2). Kept in sync with poker_collusion/requirements.txt.
+dependencies = [
+    "numpy==2.2.6",
+    "pandas==2.2.3",
+    "pyarrow==18.1.0",
+    "scikit-learn==1.6.1",
+    "torch==2.6.0",
+    "hypothesis==6.125.3",
+    "pytest==8.3.5",
+    "PyYAML==6.0.2",
+    # polars is used only by the lowest-friction reproduction notebook under
+    # anchor_repro (verified installable + importable on Python 3.13). Pinned
+    # exactly per the reverse-engineering-accountability contract (no version
+    # guessing; this is the resolved version captured from a real install).
+    "polars==1.44.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.5",
+    "hypothesis==6.125.3",
+]
+
+[tool.setuptools.packages.find]
+include = ["poker_collusion*", "anchor_repro*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "poker_collusion/tests"]
+python_files = ["test_*.py"]
+markers = [
+    "integration: end-to-end tests that need the real dev data / feature caches (data-and-dependency gated; skip if unavailable).",
+]
+
+[tool.hypothesis]
+# Property-based tests run >=100 iterations per the design's Testing Strategy.

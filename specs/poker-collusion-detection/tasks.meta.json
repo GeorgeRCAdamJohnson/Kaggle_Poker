@@ -1,0 +1,1316 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Project scaffolding and shared foundations": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672676113
+      },
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672692846
+      },
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788673191128
+      }
+    ],
+    "2.1 Download competition data and verify schema/join keys": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672676497
+      },
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788673194356
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715022031
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715034980
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715178953
+      }
+    ],
+    "2.2 Workstream A — metric code forensics → write the metric contract": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672676723
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715022489
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715183451
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715436496
+      },
+      {
+        "executionId": "5c15abdb-c56d-4455-9aa5-5bf719f02c11",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788716518275
+      },
+      {
+        "executionId": "5c15abdb-c56d-4455-9aa5-5bf719f02c11",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788716521451
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788721424271
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788721427531
+      }
+    ],
+    "2.3 Workstream B — data-generation reverse engineering": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672676756
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715022548
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715184398
+      },
+      {
+        "executionId": "5c15abdb-c56d-4455-9aa5-5bf719f02c11",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788716062279
+      }
+    ],
+    "2.4 Workstream C — label & evidence structure audit": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677032
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715022844
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715185808
+      },
+      {
+        "executionId": "5c15abdb-c56d-4455-9aa5-5bf719f02c11",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788716346943
+      }
+    ],
+    "2.5 Workstream D — adversarial / exploit hunting (rules-compliant, logged)": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677076
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715022904
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715187247
+      },
+      {
+        "executionId": "5c15abdb-c56d-4455-9aa5-5bf719f02c11",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788716500989
+      }
+    ],
+    "2.6 Workstream E — create and structure `RESEARCH_DOSSIER.md`": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677127
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715022972
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715188270
+      },
+      {
+        "executionId": "5c15abdb-c56d-4455-9aa5-5bf719f02c11",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788716502153
+      }
+    ],
+    "3. HARD GATE — Discovery review checkpoint": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677169
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715023040
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788721412268
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788721415658
+      }
+    ],
+    "4.1 Implement an independent, deliberately-simple reference metric": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677212
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715023136
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788721437280
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788721656021
+      }
+    ],
+    "4.2 Implement the production metric matching the metric contract": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677250
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715023231
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788721438209
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788721656820
+      }
+    ],
+    "4.3 Property test — local metric matches reference (PU-correct)": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677294
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715023326
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788721662189
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788723601435
+      }
+    ],
+    "4.4 Reconciliation test — bit-for-bit against the actual public metric code": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677344
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715023401
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788721663563
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788723602804
+      }
+    ],
+    "4.5 Metric-contract acceptance check": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677405
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715023468
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788723611260
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788723977637
+      }
+    ],
+    "5.1 Build the group-by-pool, family-stratified, PU-correct CV harness": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677431
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715023579
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788721664572
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788723603807
+      }
+    ],
+    "5.2 Add bootstrap confidence intervals over pairs": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677463
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715023633
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788723982703
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788724279008
+      }
+    ],
+    "5.3 Add the LB-vs-CV correlation diagnostic and submission-selection rule": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677500
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715023700
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788724280222
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788724701087
+      }
+    ],
+    "6. Phase 0 gate checkpoint": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677532
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715023794
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788726114023
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788726117454
+      }
+    ],
+    "7.1 Implement chunked, column-projected, per-pool loading and joins": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677562
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715023882
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788726126310
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788726552481
+      }
+    ],
+    "7.2 Fixture and edge-case tests for loading/joining": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677592
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024048
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788726556913
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788731727774
+      }
+    ],
+    "8.1 Implement EDA/audit and versioned threshold artifact": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677619
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024106
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788726558305
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788727089746
+      }
+    ],
+    "8.2 Fixture tests for audit reporting": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677650
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024165
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788731742870
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788731974541
+      }
+    ],
+    "9.1 Implement hand-level signals (decision-time context only)": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677689
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024217
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788726559149
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788727088966
+      }
+    ],
+    "9.2 Property test — directed value-flow is antisymmetric": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677718
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024280
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788727097628
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788731729121
+      }
+    ],
+    "9.3 Property test — all-in classification follows the amount/to_call rule": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677750
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024344
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788727099015
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788731730521
+      }
+    ],
+    "9.4 Property test — zero-denominator signals yield the sentinel, never an error": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677780
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024401
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788727100095
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788731731921
+      }
+    ],
+    "10.1 Implement episodic aggregation": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677809
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024455
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788727096696
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788731732953
+      }
+    ],
+    "10.2 Property test — episodic concentration never lowers the coordination signal": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677836
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024518
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788731980757
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788732358701
+      }
+    ],
+    "10.3 Assemble the deterministic, schema-versioned Pair_Feature_Set": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677866
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024582
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788731979683
+      },
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788732359597
+      }
+    ],
+    "10.4 Property test — feature computation is deterministic": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677898
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024661
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788732950388
+      }
+    ],
+    "11.1 Implement explainable classical detectors with reason strings": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677928
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024768
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788732956087
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733322019
+      }
+    ],
+    "11.2 Property test — risk score coverage and range (baseline)": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677958
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024854
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733681725
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733918823
+      }
+    ],
+    "12.1 Implement evidence selection with hard validity gate and deterministic ranking": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672677986
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715024957
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788732951477
+      }
+    ],
+    "12.2 Property test — every selected evidence hand is valid": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678016
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025025
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733329116
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733669183
+      }
+    ],
+    "12.3 Property test — evidence slots are complete and non-empty": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678051
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025097
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733330076
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733670158
+      }
+    ],
+    "12.4 Property test — no repeated evidence hand within a pair": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678082
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025185
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733331148
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733671605
+      }
+    ],
+    "12.5 Property test — evidence positions sorted by strength then hand id": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678113
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025252
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733336373
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733672647
+      }
+    ],
+    "13.1 Implement schema-matching writer with self-validation and atomic write": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678143
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025314
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733327719
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733667738
+      }
+    ],
+    "13.2 Property test — submission matches the sample schema (round-trip)": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678169
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025379
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733925188
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788734331877
+      }
+    ],
+    "13.3 Property test — submission field domains": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678198
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025435
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733926202
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788734332799
+      }
+    ],
+    "14.1 Assemble the single-entry-point baseline pipeline": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678229
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025492
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733927277
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788734334015
+      }
+    ],
+    "14.2 End-to-end integration test on a small synthetic pool": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678260
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025539
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788734353418
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788734710927
+      }
+    ],
+    "15. Phase 1 gate checkpoint": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678317
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025594
+      },
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788734726779
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788756466910
+      }
+    ],
+    "16.1 Implement the PU-aware risk model": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678344
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025658
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788756694670
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788759083098
+      }
+    ],
+    "16.2 Property test — risk score coverage and range (PU model)": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678375
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025752
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788759088418
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788760034505
+      }
+    ],
+    "16.3 Property test — ranking independent of input row order": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678407
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025810
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788759089863
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788760035612
+      }
+    ],
+    "17.1 Implement the behavior classifier with shared risk_score and none-thresholding": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678435
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025866
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788759090785
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788760033576
+      }
+    ],
+    "17.2 Property test — below-threshold pairs are routed to `none`": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678466
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025917
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788760041758
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788760279931
+      }
+    ],
+    "18. Adopt CV-confirmed exploits and calibrate the shared risk_score": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678497
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715025979
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788760292814
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788762362147
+      }
+    ],
+    "19. Phase 2 gate checkpoint": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678529
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715026033
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788762378859
+      },
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788763775189
+      }
+    ],
+    "20.1 Implement a learned evidence-strength scorer behind the validity gate": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678560
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715026083
+      }
+    ],
+    "20.2 Property test — evidence positions sorted by strength then hand id (learned ranker)": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678593
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715026127
+      }
+    ],
+    "21.1 Implement joint-tuning configuration and reporting": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678624
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715026177
+      }
+    ],
+    "21.2 (Optional escalation) GNN detector for complex collusive patterns": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678651
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715026222
+      }
+    ],
+    "22. Phase 3 gate checkpoint": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678680
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715026278
+      }
+    ],
+    "23.1 Implement the reproducibility manifest and seed/artifact persistence": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678714
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715026327
+      }
+    ],
+    "23.2 Property test — selected configuration reproduces the submission": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678743
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715026381
+      }
+    ],
+    "24. Case-review generator for winner verification": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678774
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715026436
+      }
+    ],
+    "25.1 Implement the no-shadow guard": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678808
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715026485
+      }
+    ],
+    "25.2 Smoke test — no local stub shadows the real SDK": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678841
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715026533
+      }
+    ],
+    "26. Final checkpoint": [
+      {
+        "executionId": "97cd404f-e49f-4d06-ba70-fa17a1b06321",
+        "chatSessionId": "sess_6fa15d61-44c1-47f1-9606-e476f7e53b28",
+        "timestamp": 1788672678868
+      },
+      {
+        "executionId": "55317f3c-3b13-4d9a-b029-2f0ed4cf5f8f",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788715026578
+      }
+    ],
+    "2. Discovery data access and forensics": [
+      {
+        "executionId": "5c15abdb-c56d-4455-9aa5-5bf719f02c11",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788716521502
+      }
+    ],
+    "4. Reference and production metric re-implementation": [
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788723977699
+      }
+    ],
+    "5. Local CV harness and diagnostics": [
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788724701162
+      }
+    ],
+    "7. Data_Loader": [
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788731727822
+      }
+    ],
+    "9. Hand-Level Signal Extraction": [
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788731731968
+      }
+    ],
+    "8. EDA & Label Audit": [
+      {
+        "executionId": "efb40b4e-063b-410e-a09f-20c5f98b99a8",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788731974600
+      }
+    ],
+    "10. Episodic Aggregation and Pair_Feature_Set": [
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788732950441
+      }
+    ],
+    "12. Evidence_Retriever": [
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733672687
+      }
+    ],
+    "11. Classical Baseline Detectors": [
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788733918887
+      }
+    ],
+    "13. Submission_Writer": [
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788734332860
+      }
+    ],
+    "14. Wire the Phase-1 baseline end-to-end": [
+      {
+        "executionId": "203d66f9-70e5-4689-9d40-ae4f7bd10edd",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788734710992
+      }
+    ],
+    "16. PU Ranking Model": [
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788760035671
+      }
+    ],
+    "17. Behavior_Classifier": [
+      {
+        "executionId": "0e1102d7-213a-4925-b683-106f7ea31330",
+        "chatSessionId": "sess_de9c815c-6e47-43fd-bf62-c95d6434638a",
+        "timestamp": 1788760280008
+      }
+    ]
+  }
+}

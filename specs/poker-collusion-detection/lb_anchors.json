@@ -1,0 +1,23 @@
+{
+  "_schema": {
+    "description": "Append-only LB_Anchor store for the poker-layered-tuning harness (Req 7.1, 8.7). Each anchor is a (configuration, real_leaderboard_score, measured_drift, holdout_AP) tuple from an ACTUALLY-submitted candidate. Used to calibrate the Drift_Gate (LB_Calibrated_Threshold) and the LB_Projection. APPEND ONLY: never edit or delete an existing anchor. Only a real, external leaderboard result may be added.",
+    "fields": {
+      "config_id": "stable identifier of the submitted configuration",
+      "real_lb": "the REAL private/public leaderboard score returned by Kaggle (external judge, never a projection)",
+      "measured_drift": "adversarial dev-vs-eval AUC (Drift_Gate) for the whole feature stack",
+      "holdout_ap": "PU-stress AP on the table-disjoint, pair-disjoint 40% dev holdout",
+      "source": "provenance / dossier section the anchor is grounded in",
+      "verified": "true only when confirmed by an external judge (leaderboard) per accountability contract Rule 1"
+    }
+  },
+  "anchors": [
+    {
+      "config_id": "known_good_floor",
+      "real_lb": 0.44519,
+      "measured_drift": 0.679,
+      "holdout_ap": 0.3839,
+      "source": "RESEARCH_DOSSIER.md §33 (real leaderboard, external judge); stack = v5 foundation + board_equity MFg + directional DIRc; artifact submission_best_044519.csv sha256=140d38b5badd4aef611bae19f31f7868a2923aff787074f0ee3b1975c2ef48e0",
+      "verified": true
+    }
+  ]
+}
