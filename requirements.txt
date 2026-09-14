@@ -1,0 +1,31 @@
+﻿# Kaggle_Poker — runtime dependencies (VERIFIED versions actually installed + working)
+# Captured from the live environment on 2026-09-14 (Python 3.13.14, Windows).
+# These are the versions that produced the verified LB ladder (best 0.67838).
+#
+# NOTE: pyproject.toml carries OLDER historical pins (numpy 2.2.6, pandas 2.2.3, etc.)
+# and lists torch (unused by the poker recipes) while omitting the GBDT libs. Prefer
+# THIS file for reproducing the poker pipeline. See SETUP.md.
+
+# --- core numerics / IO ---
+numpy==2.5.2
+pandas==3.0.5
+polars==1.44.2
+pyarrow==25.0.1
+scipy==1.18.1
+scikit-learn==1.9.0
+
+# --- gradient-boosted trees (triple-GBDT risk head: XGB + LGBM + CatBoost) ---
+# xgboost supports device="cuda" (GPU); lightgbm/catboost run CPU.
+# On Python 3.13, install lightgbm/catboost with prebuilt wheels only:
+#   pip install --only-binary=:all: lightgbm catboost
+xgboost==2.1.3
+lightgbm==4.7.0
+catboost==1.2.10
+
+# --- Kaggle CLI (submissions + kernel pulls) ---
+kaggle==2.2.4
+
+# --- test stack (optional, for running tests/) ---
+pytest==8.3.5
+hypothesis==6.125.3
+PyYAML==6.0.2
