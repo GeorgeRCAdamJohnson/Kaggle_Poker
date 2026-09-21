@@ -18,6 +18,22 @@
       "holdout_ap": 0.3839,
       "source": "RESEARCH_DOSSIER.md §33 (real leaderboard, external judge); stack = v5 foundation + board_equity MFg + directional DIRc; artifact submission_best_044519.csv sha256=140d38b5badd4aef611bae19f31f7868a2923aff787074f0ee3b1975c2ef48e0",
       "verified": true
+    },
+    {
+      "config_id": "lamhuy_v30_sequence_rank_sum_w50_seed137",
+      "real_lb": 0.70904,
+      "measured_drift": null,
+      "holdout_ap": 0.9806005,
+      "source": "RESEARCH_DOSSIER.md §95 (Kaggle public LB, submission ref 56235487); candidate outputs/poker_collusion/lamhuy_sequence_confirmation/candidate_v30_hnm_sequence_confirmation_rank_sum_w50.csv sha256=887dbed3ff47880adc073fe4810bcb9086466ed5246b4e615f7d50de82378373; ordered-sequence family-specialist rank blend, independent seed-137 confirmation",
+      "verified": true
+    },
+    {
+      "config_id": "lamhuy_v30_sequence_behavior_rate020",
+      "real_lb": 0.70896,
+      "measured_drift": null,
+      "holdout_ap": 0.7105707,
+      "source": "RESEARCH_DOSSIER.md §98 (Kaggle public LB, submission ref 56242203); candidate outputs/poker_collusion/lamhuy_sequence_behavior/candidate_070904_sequence_behavior_no_submit.csv sha256=ddcf9b3890a0782fce5eb2ce6cdb8b5b60cdeabcc5ee2ba940df2e7236604f47; exact 0.70904 risk and V30 evidence, behavior-only fixed 2% active-rate change",
+      "verified": true
     }
   ]
 }

@@ -33,3 +33,11 @@ credentials*
 Thumbs.db
 .vscode/
 .idea/
+# External-validation download (large; not ours to redistribute)
+_external_val/
+# Competitor kernels pulled for analysis (copyright)
+_competitor_kernels/
+# Scratch logs / stray
+*.log
+_loopv.txt
+Documents/

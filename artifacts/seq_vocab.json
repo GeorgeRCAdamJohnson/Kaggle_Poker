@@ -1,0 +1,1 @@
+{"vocab_size": 586, "PAD": 0, "BOS": 1, "HAND_SEP": 2, "actions": ["fold", "check", "call", "bet", "raise", "all_in"], "max_len": 512, "max_hands": 60}
