@@ -79,17 +79,22 @@ feature basis. Recording these as measured nulls kept us from shipping dev-overf
 
 ## 6. Reproduction
 
-The public notebook regenerates the selected submission end-to-end from the released files:
+The full reproduction lives in the linked code repository (`REPRODUCTION.md` for the staged pipeline,
+`REPRODUCE_83460.ipynb` for a byte-verified regeneration, `anchor_repro/validate_submission.py` for schema
+checks). This Kaggle notebook is the writeup itself, not the runnable pipeline. From the released files, the
+repository regenerates the selected submission in five stages:
+
 1. one pass over the action log to build per-hand pair features (Polars);
-2. the entry-policy tables and field baselines;
+2. the card-conditional entry-policy tables and field baselines;
 3. the masked-action sequence encoder (pretrain + distill) → `seq_risk`;
 4. the two-stage PU risk model, the family classifier, and the three family-conditional evidence rankers;
 5. assembly into `submission.csv`, with validity checks (schema, `pair_id` set, `risk_score ∈ [0,1]`, no
    duplicate evidence hands within a pair).
 
-Cross-validation is table-disjoint throughout; the risk gate uses eval-weighted held-out folds. Runtime is a
-few hours on a single GPU (encoder) + CPU (LightGBM); the encoder step is cached so the submission assembly
-re-runs in minutes. See the notebook for exact setup and execution instructions.
+Cross-validation is table-disjoint throughout; the risk gate uses eval-weighted held-out folds. A full run
+is a few hours on a single GPU (encoder) plus CPU (LightGBM). The trained encoder checkpoint is shipped in
+the repository's `artifacts/`, so the encoder-training stage can be skipped and the submission regenerated in
+minutes; the regenerated file is byte-identical (SHA256 prefix `2ba41953a89fa752`).
 
 ## 7. Compliance
 
